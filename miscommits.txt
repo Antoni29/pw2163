@@ -1,0 +1,11 @@
+commit 54e0e02f7a5cad7fee099370374ecc0a39d08616
+Author: Antoni29 <vallegalvez.93@gmail.com>
+Date:   Fri Sep 2 11:31:43 2016 -0600
+
+    Cambio en mi readme.txt
+
+commit 43879c18b0a8b80cceba6219cc5de0e8b74fa090
+Author: Antoni29 <vallegalvez.93@gmail.com>
+Date:   Tue Aug 30 11:55:22 2016 -0600
+
+    Commit inicial con readme.txt
