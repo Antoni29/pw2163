@@ -1,0 +1,30 @@
+/*Selextores*/
+/*1.- Etiquetas*/
+/*2.- Identificadores*/
+/*3.- Clases*/
+
+body /*Selector -etiqueta*/
+{
+	/*atributo-:valor;*/
+	border: 1px solid blue;
+	border-radius: 5px;
+	max-width: 1024px;
+
+}
+
+header
+{
+	background: #1AA0E5; /*Fondo*/
+	border: 1px solid red;
+	color: white; /*Letra*/
+	text-align: center; /*Alineacion*/
+}
+
+header nav ul li 
+{
+	/*border: 1px solid #57C902;*/
+	background: #57C902;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px;
+}
