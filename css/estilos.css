@@ -18,13 +18,26 @@ header
 	border: 1px solid red;
 	color: white; /*Letra*/
 	text-align: center; /*Alineacion*/
+	font-family: sans-serif; /*tipo fuente de letra*/
+	/*padding-bottom: 30px;*/
 }
 
 header nav ul li 
 {
 	/*border: 1px solid #57C902;*/
-	background: #57C902;
-	border-radius: 5px;
-	display: inline-block;
-	padding: 5px;
+	background: #57C902; /*color de fondo*/
+	border-radius: 5px; /*bordes redondeados*/
+	display: inline-block; /*rompe modelo de caja*/
+	margin: 0px 10px 50px 10px; /*separo las cajas*/
+	padding: 5px 5px 5px 5px; /*agrando los botones (interno)*/
+	width: 80px; /*ancho del boton*/
+	box-shadow: 2px 2px;
+
+}
+
+header nav ul li:hover /*mouse por encima*/
+{
+	background:white;
+	color:#0261CD;
+
 }
