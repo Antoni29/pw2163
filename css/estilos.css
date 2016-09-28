@@ -8,6 +8,7 @@ body /*Selector -etiqueta*/
 	/*atributo-:valor;*/
 	border: 1px solid blue;
 	border-radius: 5px;
+	margin: 0px auto;
 	max-width: 1024px;
 
 }
@@ -20,6 +21,13 @@ header
 	text-align: center; /*Alineacion*/
 	font-family: sans-serif; /*tipo fuente de letra*/
 	/*padding-bottom: 30px;*/
+}
+
+header img
+{
+	float: right;
+	width:150px; /*Ancho de la imagen*/
+	margin: -65px 30px 0px 0px
 }
 
 header nav ul li 
@@ -41,3 +49,4 @@ header nav ul li:hover /*mouse por encima*/
 	color:#0261CD;
 
 }
+
