@@ -1,0 +1,37 @@
+article
+{
+	background: greenyellow; /*fondo*/
+	border: 2px solid black; /*borde*/
+	color: black; /*color de letra*/
+	margin: 20px 5px; /*margen exterior*/
+	padding: 15px; /*margen interior*/
+	text-align: center; /**/
+	-moz-transition: all 5s linear;
+	-ms-transition: all 5s linear;
+	-o-transition: all 5s linear;
+	-webkit-transition: all 5s linear;
+	width: 400px; /*ancho de la caja*/
+}
+
+article p
+{
+	font: 30px Tahoma;
+	font-weight: bold;
+	width: 100%; /*Ancho del texto*/
+}
+
+/*article:hover
+{
+	height: 400px;
+	width: 800px;
+}*/
+
+article:hover
+{
+	background: black;
+	color: greenyellow;
+	-moz-transform: skew(10deg,10deg); /*mozilla firefix*/
+	-ms-transform: skew(10deg,10deg); /*MicroSoft*/
+	-o-transform: skew(10deg,10deg); /*Opera*/
+	-webkit-transform: skew(10deg,10deg); /*Chrome y Safari*/
+}
