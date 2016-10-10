@@ -4,8 +4,7 @@
 /*2.- Identificadores*/
 /*3.- Clases*/
 
-@font-face
-{
+@font-face{
 	font-family: 'Coming Soon'; /*Nombre de la fuente*/
 	src: url('Fuentes/Coming_Soon/ComingSoon.ttf'); /*Donde esta el archivo?*/
 }
@@ -60,7 +59,7 @@ header nav ul li
 	display: inline-block; /*rompe modelo de caja*/
 	margin: 0px 10px 50px 10px; /*separo las cajas*/
 	padding: 5px 5px 5px 5px; /*agrando los botones (interno)*/
-	width: 80px; /*ancho del boton*/
+	width: 90px; /*ancho del boton*/
 	box-shadow: 2px 2px;
 
 }
