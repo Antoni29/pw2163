@@ -37,10 +37,43 @@ header nav ul li
 	left: -35px;
 }
 
+#footer
+{
+	background: #2f84ca;
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+#footer article
+{
+	display: inline-block;
+	font-size: 0.7em;
+	color:white;
+	font-family: arial;
+}
+
+#footercentral
+{
+	text-align: center;
+	padding-left: 100px;
+}
+
 #granthams /*logo de la empresa*/
 {
 	margin-top: 20px;
 	margin-left: 25px;
+}
+
+#imgfooter
+{
+	float: right;
+	margin-top: -20px;
+}
+
+#mailinglist
+{
+	padding-top: 60px;
 }
 
 #paint /**/
@@ -80,6 +113,17 @@ header nav ul li
 	width: 30%;
 }
 
+#secc01art02 ul
+{
+	list-style: none;
+}
+
+#secc01art02 ul li:before
+{
+	content:"· ";
+	color:#F4A3C6;
+}
+
 #terceraseccion article
 {
 	display: inline-block;
@@ -87,15 +131,26 @@ header nav ul li
 	vertical-align: top;
 }
 
+#terceraseccion article img
+{
+	vertical-align: middle;
+}
 
 .colorazul
 {
 	color:#2f84ca;
 }
 
+.colorazul,.colorrosa,.colorverde
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: arial;
+}
+
 .colorrosa
 {
-	color:#FF0099;
+	color:#F4A3C6;
 }
 
 .colorverde
