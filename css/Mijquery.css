@@ -1,0 +1,10 @@
+#imgFoto
+{
+	border-radius: 500px;
+}
+
+
+#txtNombre,#imgFoto
+{
+	display: none; /*Se oculta*/
+}
