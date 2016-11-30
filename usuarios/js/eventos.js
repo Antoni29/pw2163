@@ -4,17 +4,14 @@ var inicioUsuarios = function()
 	{
 		//Extraer los datos de los input en el HTML
 		var usuario = $("#txtUsuario").val();
-		var usuario = $("#txtUClave").val();
+		var clave = $("#txtUClave").val();
 
 		//preparar los parametros para AJAX
 		var parametros = "opcion=valida"+
 						 "&usuario="+usuario+
 						 "&clave="+clave+
 						 "&id="+Math.random();
-
 		
-
-
 		//Validamos que no esten vacios
 		if(usuario!="" && clave !="")
 		{
@@ -36,7 +33,7 @@ var inicioUsuarios = function()
 					{
 						alert("Datos incorrectos :(");
 					}
-				}
+				},
 				error:function(xhr,ajaxOptions,thrownError){
 					//Si todo sale mal
 				}
@@ -48,6 +45,16 @@ var inicioUsuarios = function()
 		}
 	}
 	$("#btnValidaUsuario").on("click",validaUsuario);
+
+	var teclaClave = function(tecla)
+	{
+		if(tecla.which == 13) //Tecla enter
+		{
+			validaUsuario(); //Funcion que valida al usuario.
+		}
+	}
+	//keypress: se ejecuta cada vez que presiono una tecla sobre el input.
+	$("#txtClave").on("keypress",teclaClave);
 }
 
 

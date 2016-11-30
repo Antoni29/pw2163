@@ -34,7 +34,7 @@
 		$conexion = mysql_connect("localhost","root","");
 		//Conexion a la base de datos
 		mysql_select_db("bd2163");
-		$consulta = sprintf("select usuario,clave from usuarios where usuario=%s and clave%s limit 1",$u,$c);
+		$consulta = sprintf("select usuario,clave from usuarios where usuario=%s and clave=%s limit 1",$u,$c);
 		$resultado= mysql_query($consulta);
 		//Esperamos un solo resultado
 		if(mysql_num_rows($resultado) == 1)
