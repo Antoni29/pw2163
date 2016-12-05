@@ -55,7 +55,32 @@ var inicioUsuarios = function()
 
 	var Alta = function()
 	{
+		$("h2").html("Alta de usuarios");
 		$("#artAltaUsuarios").show("slow");
+		//Esconder todos los botones
+		//contenido en artAltaUsuarios
+		$("#artAltaUsuarios > button").hide();
+		$("#btnGuardaUsuario").show();
+	}
+
+	var Baja = function()
+	{
+		$("h2").html("Baja de usuarios");
+		$("#artAltaUsuarios").show("slow");
+		//Esconder todos los botones
+		//contenido en artAltaUsuarios
+		$("#artAltaUsuarios > button").hide();
+		$("#btnBajaUsuario").show();
+	}
+
+	var Cambio = function()
+	{
+		$("h2").html("Cambio de usuarios");
+		$("#artAltaUsuarios").show("slow");
+		//Esconder todos los botones
+		//contenido en artAltaUsuarios
+		$("#artAltaUsuarios > button").hide();
+		$("#btnCambioUsuario").show();
 	}
 
 	var GuardaUsuario = function()
@@ -63,10 +88,43 @@ var inicioUsuarios = function()
 		
 	}
 
+	var teclaUsuario = function(tecla)
+	{
+		if(tecla.which == 13) //Enter
+		{
+			var usuario = $("txtUsuarioNombre").val();
+			var parametros = "opcion=buscaUsuario"+
+							 "&usuario"+usuario+
+							 "&id"+Math.random();
+
+			$.ajax({
+				cache:false,
+				type:"POST",
+				dataType:"json",
+				url:"php/utilerias.php",
+				data:parametros,
+				success:function(response){
+					if(response.respuesta == true)
+					{
+						$("#txtNombre").val(response.nombre);
+						$("#txtClaveNombre").val(response.clave);
+						$("#txtTipo option:selected").text(response.tipo);
+					}
+				},
+				error:function(xhr, ajaxOptions,thrownError){
+					console.log("Fallo en el servidor");
+				}
+			});
+		}
+	}
+
 	//keypress: se ejecuta cada vez que presiono una 
 	//tecla sobre el input.
 	$("#txtClave").on("keypress",teclaClave);
 	$("#btnAlta").on("click",Alta);
+	$("#btnBaja").on("click",Baja);
+	$("#btnCambio").on("click",Cambio);
+	$("#txtUsuarioNombre").on("keypress",teclaUsuario);
 	$("#btnGuardaUsuario").on("click",GuardaUsuario);
 }
 //Evento inicial
